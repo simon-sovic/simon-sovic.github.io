@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!--
+    Hello, human!
+    What are you doing here?
+    Are you deaf?
+    Is your mic on?
+    Anyway, do you know what's a paraboloid?
+    You do? Great! I've just 3D-printed one.
+    I'm stuck inside because of COVID-19.
+    This page is temporary.
+    Why am I writing this?
+    How did you even answer me?
+    What's future like?
+    Ok, I'm gonna stop now.
+    It was nice meeting you.
+    Bye.
+-->
+
+<html>
+    <head>
+        <title> Hello, Human! </title>
+    </head>
+    <body>
+        <h1> Hello, Human! </h1>
+        <p> Let me present some facts to you: </p>
+        <p> -  I am a human </p>
+        <p> -  You are a human </p>
+        <p> -  Other people are humans </p>
+        <p> -  This isn't magic </p>
+        <p id="counter" style="font-family: 'Courier New', Courier, monospace"> Natural numbers:  1</p>
+    </body>
+    <script>
+
+        let counter = 1
+        let counterParagraph = document.getElementById("counter")
+
+        setInterval(_ => {
+            counter ++
+            counterParagraph.innerText += ", " + counter
+        }, 1000)
+
+    </script>
+</html>
